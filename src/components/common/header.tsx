@@ -30,7 +30,7 @@ const header = () => {
                         <Button>User</Button>
                     </div>
                 ) : (
-                    <NavLink href="/sign-in">Sign In 2</NavLink>
+                    <NavLink href="/sign-in">Sign In</NavLink>
                 )}
             </div>
         </nav>

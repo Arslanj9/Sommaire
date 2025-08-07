@@ -46,14 +46,18 @@ const HowItWorksSection = () => {
   )
 }
 
-const StepItem = ({icon, label, description}): Step => {
-    return (
-        <div className="relative p-6 rounded-2xl bg-white/5 hover:border-rose-500/50 transition-colors group w-full">
-            {icon}
-            <h4>{label}</h4>
-            <p>{description}</p>
+const StepItem = ({ icon, label, description }: Step) => {
+  return (
+    <div className="relative p-6 rounded-2xl bg-white/70 border border-transparent hover:border-rose-500/70 hover:bg-rose-50/40 transition-colors group w-full shadow-sm">
+      <div className="flex flex-col gap-4 h-full">
+        <div className="flex items-center justify-center h-24 w-24 mx-auto rounded-2xl bg-rose-100/60 border border-rose-200 text-rose-600 shadow group-hover:bg-rose-200/80 transition-colors">
+          {icon}
         </div>
-    )
-}
+      <h4 className="mt-6 text-lg font-semibold text-center text-rose-600 group-hover:text-rose-700 transition-colors">{label}</h4>
+      <p className="mt-2 text-center text-gray-700">{description}</p>
+      </div>
+    </div>
+  );
+};
 
 export default HowItWorksSection
